@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function NewUser() {
+
     return (
         <div className='new-user'>
             <div className='user-box'>

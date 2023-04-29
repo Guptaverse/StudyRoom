@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Routes>
         <Route exact path='/' element={<HomePage />} />
-        {/* <Route exact path='/NewUser' element={<NewUser />} /> */}
+        <Route exact path='/GroupRoom' element={<NewUser />} />
       </Routes>
     </div>
   )

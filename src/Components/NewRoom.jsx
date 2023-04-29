@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function NewRoom() {
+    const navigate = useNavigate()
+
     return (
         <div className='new-user'>
             <div className='user-box'>
@@ -12,7 +15,7 @@ export default function NewRoom() {
                     <label htmlFor="">Room ID:  </label>
                     <input type="text" />
                 </div>
-                <button className='btn'>Join</button>
+                <button className='btn' onClick={() => {navigate('/GroupRoom')}}>Join</button>
             </div>
         </div>
     )

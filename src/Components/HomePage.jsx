@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/home.css'
 import NewUser from './NewUser'
 import NewRoom from './NewRoom'
 import img1 from '../assets/group-study.webp'
 
 export default function HomePage() {
-    const navigate = useNavigate()
     return (
         <div>
             <header>
@@ -19,7 +18,7 @@ export default function HomePage() {
                             <li>
                                 <a href="" class="active">Home</a>
                             </li>
-                            
+
                             <li>
                                 <a href="">About</a>
                             </li>
@@ -41,11 +40,11 @@ export default function HomePage() {
                 </div>
             </header>
             <section className='hero-section'>
+                {/* <NewUser /> */}
+                {/* <NewRoom /> */}
                 <div className='btn-grp'>
                     <button className='btn'/* onClick={() => {navigate("/NewUser")}}*/>Create Username</button>
-                    {/* <NewUser /> */}
                     <button className='btn'>Join a Room</button>
-                    {/* <NewRoom /> */}
                 </div>
                 <div className='hero-img'>
                     <img src={img1} alt="" />
