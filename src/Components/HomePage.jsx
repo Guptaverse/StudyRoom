@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/home.css'
-import NewUser from './NewUser'
-import NewRoom from './NewRoom'
+import NewUser from '../Routes/NewUser'
+import NewRoom from '../Routes/NewRoom'
 import img1 from '../assets/group-study.webp'
 
 export default function HomePage() {
