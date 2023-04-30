@@ -12,9 +12,9 @@ export default function NewUser() {
             {close ?
                 <div className='new-user'>
                     < div className='user-box' >
-                        <div>
+                        <div className='modal-grp'>
                             <label htmlFor="">Username: </label>
-                            <input type="text" />
+                            <input />
                         </div>
                         <button className='btn'>Create</button>
                         <div className='close' onClick={() => setClose(!close)}>
