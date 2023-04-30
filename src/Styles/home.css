@@ -211,5 +211,6 @@ header .header-right .hamburger div {
 
 .hero-img {
     position: relative;
-    left: 10rem;
+    left: 8%;
+    top: 8%;
 }

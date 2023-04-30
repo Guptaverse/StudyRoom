@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/home.css'
 import NewUser from '../Components/NewUser'
 import NewRoom from './NewRoom'
-import img1 from '../assets/group-study.webp'
+// import img1 from '../assets/group-study.webp'
+import img1 from '../assets/pnggroup.png'
 
 export default function HomePage() {
     const [user, setUser] = useState(false)
