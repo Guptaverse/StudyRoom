@@ -152,7 +152,7 @@ header .header-right .hamburger div {
 .new-user {
     position: fixed;
     top: 0;
-    background-color: rgba(20, 33, 61, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(0.4rem);
     height: 100vh;
     width: 100vw;
@@ -169,8 +169,18 @@ header .header-right .hamburger div {
     align-items: center;
     /* border: 1px solid black; */
     padding: 10px;
+    font-size: 1.5em;
     background-color: white;
+    padding: 20px;
+    position: relative;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.close {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
 }
 
 .new-user .btn {

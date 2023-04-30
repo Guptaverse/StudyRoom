@@ -1,38 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/home.css'
-import NewUser from '../Routes/NewUser'
-import NewRoom from '../Routes/NewRoom'
+import NewUser from '../Components/NewUser'
+import NewRoom from './NewRoom'
 import img1 from '../assets/group-study.webp'
 
 export default function HomePage() {
+    const [user, setUser] = useState(false)
+    const [room, setRoom] = useState(false)
+
     return (
         <div>
             <header>
-                <div class="header-left">
-                    <div class="logo">
+                <div className="header-left">
+                    <div className="logo">
                         <img src="./logo.png" alt="" />
                     </div>
                     <nav>
                         <ul>
                             <li>
-                                <a href="" class="active">Home</a>
+                                <Link to="/" className="active">Home</Link>
                             </li>
 
                             <li>
-                                <a href="">About</a>
+                                <Link to="">About</Link>
                             </li>
                         </ul>
-                        <div class="login-signup">
+                        {/* <div className="login-signup">
                             <a href="">Login</a> or <a href="">Signup</a>
-                        </div>
+                        </div> */}
                     </nav>
                 </div>
-                <div class="header-right">
-                    {/* <div class="login-signup">
+                <div className="header-right">
+                    {/* <div className="login-signup">
                         <a href="">Login</a> or <a href="">Signup</a>
                     </div> */}
-                    <div class="hamburger">
+                    <div className="hamburger">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -40,11 +43,19 @@ export default function HomePage() {
                 </div>
             </header>
             <section className='hero-section'>
-                {/* <NewUser /> */}
-                {/* <NewRoom /> */}
+                {user ?
+                    <NewUser />
+                    :
+                    ' '
+                }
+                {room ?
+                    <NewRoom />
+                    :
+                    ' '
+                }
                 <div className='btn-grp'>
-                    <button className='btn'/* onClick={() => {navigate("/NewUser")}}*/>Create Username</button>
-                    <button className='btn'>Join a Room</button>
+                    <button className='btn' onClick={() => setUser(!user)}>Create Username</button>
+                    <button className='btn' onClick={() => setRoom(!room)}>Join a Room</button>
                 </div>
                 <div className='hero-img'>
                     <img src={img1} alt="" />
