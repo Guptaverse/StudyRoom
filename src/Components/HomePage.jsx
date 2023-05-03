@@ -4,7 +4,7 @@ import '../Styles/home.css'
 import NewUser from '../Components/NewUser'
 import NewRoom from './NewRoom'
 // import img1 from '../assets/group-study.webp'
-import img1 from '../assets/pnggroup.png'
+import img1 from '../assets/8262271.jpg'
 
 export default function HomePage() {
     const [user, setUser] = useState(false)
@@ -44,18 +44,10 @@ export default function HomePage() {
                 </div>
             </header>
             <section className='hero-section'>
-                {user ?
-                    <NewUser />
-                    :
-                    ' '
-                }
-                {room ?
-                    <NewRoom />
-                    :
-                    ' '
-                }
+                {user && <NewUser user={user} setUser={setUser} />}
+                {room && <NewRoom room={room} setRoom={setRoom} />}
                 <div className='btn-grp'>
-                    <button className='btn' onClick={() => setUser(!user)}>Create Username</button>
+                    <button className='btn' onClick={() => {setUser(!user); console.log(user)}}>Create Room</button>
                     <button className='btn' onClick={() => setRoom(!room)}>Join a Room</button>
                 </div>
                 <div className='hero-img'>
