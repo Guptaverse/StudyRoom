@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import NewUser from './NewUser';
 import NewRoom from './NewRoom'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import img1 from '../assets/8262271.jpg'
 
 export default function HomeTop() {
-    const [user, setUser] = useState(false)
-    const [room, setRoom] = useState(false)
-
+    // const [user, setUser] = useState(false)
+    // const [room, setRoom] = useState(false)
+    const navigate = useNavigate()
     return (
         <div>
             <header>
@@ -45,8 +45,8 @@ export default function HomeTop() {
                 {user && <NewUser user={user} setUser={setUser} />}
                 {room && <NewRoom room={room} setRoom={setRoom} />}
                 <div className='btn-grp'>
-                    <button className='btn' onClick={() => setRoom(!room)}>Sign Up</button>
-                    <button className='btn' onClick={() => { setUser(!user); console.log(user) }}>Login</button>
+                    <button className='btn' onClick={() => {navigate('/Login')}}>Sign Up</button>
+                    <button className='btn' onClick={() => {navigate('/Login')}}>Login</button>
                 </div>
                 <div className='hero-img'>
                     <img src={img1} alt="" />
