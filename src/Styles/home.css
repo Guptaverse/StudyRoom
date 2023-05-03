@@ -218,3 +218,18 @@ header .header-right .hamburger div {
     left: 8%;
     top: 8%;
 }
+
+.hero-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0 30px;
+}
+
+.hero-mid-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
