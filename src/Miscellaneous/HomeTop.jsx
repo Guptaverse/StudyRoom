@@ -45,8 +45,8 @@ export default function HomeTop() {
                 {user && <NewUser user={user} setUser={setUser} />}
                 {room && <NewRoom room={room} setRoom={setRoom} />}
                 <div className='btn-grp'>
-                    <button className='btn' onClick={() => { setUser(!user); console.log(user) }}>Login</button>
                     <button className='btn' onClick={() => setRoom(!room)}>Sign Up</button>
+                    <button className='btn' onClick={() => { setUser(!user); console.log(user) }}>Login</button>
                 </div>
                 <div className='hero-img'>
                     <img src={img1} alt="" />
