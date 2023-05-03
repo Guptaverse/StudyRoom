@@ -42,8 +42,8 @@ export default function HomeTop() {
                 </div>
             </header>
             <section className='hero-section'>
-                {user && <NewUser user={user} setUser={setUser} />}
-                {room && <NewRoom room={room} setRoom={setRoom} />}
+                {/* {user && <NewUser user={user} setUser={setUser} />}
+                {room && <NewRoom room={room} setRoom={setRoom} />} */}
                 <div className='btn-grp'>
                     <button className='btn' onClick={() => {navigate('/Login')}}>Sign Up</button>
                     <button className='btn' onClick={() => {navigate('/Login')}}>Login</button>
