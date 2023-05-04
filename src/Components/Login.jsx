@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Login() {
 
@@ -92,6 +93,7 @@ export default function Login() {
                                             value={confirmValues.password}
                                         />
                                         <FontAwesomeIcon icon={faEye} onClick={handleClickShowConfirmPassword} className='show-hide' />
+                                        {/* <FontAwesomeIcon icon={faCheck} style={{color: "#95d733", position:"absolute"}} /> */}
                                     </div>
                                     <button className='btn'>Sign Up</button>
                                 </form>
