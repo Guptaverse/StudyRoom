@@ -135,10 +135,13 @@ header .header-right .hamburger div {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E9F2FF;
+    /* background-color: #CAEFFF; */
 }
 
-.btn-grp {}
+.btn-grp {
+    position: relative;
+    left: 5%;
+}
 
 .btn {
     padding: 14px 0;
@@ -211,6 +214,22 @@ header .header-right .hamburger div {
 
 .hero-img {
     position: relative;
+    width: 61%;
     left: 8%;
     top: 8%;
+}
+
+.hero-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 0 30px;
+}
+
+.hero-mid-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
 }

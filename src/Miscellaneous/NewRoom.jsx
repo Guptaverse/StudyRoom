@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function NewRoom() {
+export default function NewRoom({room, setRoom}) {
     const navigate = useNavigate()
-    const [close, setClose] = useState(true)
 
     return (
         <>
-            {close ?
+            {room ?
                 <div className='new-user'>
                     < div className='user-box' >
                         <div className='modal-grp'>
@@ -21,7 +20,7 @@ export default function NewRoom() {
                             <input type="text" />
                         </div>
                         <button className='btn' onClick={() => { navigate('/GroupRoom') }}>Join</button>
-                        <div className='close' onClick={() => setClose(!close)}>
+                        <div className='close' onClick={() => setRoom(!room)}>
                             <FontAwesomeIcon icon={faCircleXmark} spin spinReverse />
                         </div>
                     </div >
