@@ -61,6 +61,13 @@
 .show-hide {
     position: absolute;
     top: 37%;
-    right: 4%;
+    right: 3.5%;
     cursor: pointer;
+}
+
+.uname {
+    color: #b1b6be;
+    position: absolute;
+    top: 37%;
+    right: 4%;
 }

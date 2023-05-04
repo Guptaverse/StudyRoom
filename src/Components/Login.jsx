@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faAt, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Login() {
 
@@ -54,7 +54,10 @@ export default function Login() {
                         <div className='form-container'>
                             <div className='form-box'>
                                 <form action="">
-                                    <input type="text" placeholder='Username' />
+                                    <div className='input-box'>
+                                        <input type="text" placeholder='Username' />
+                                        <FontAwesomeIcon icon={faAt} className='uname' />
+                                    </div>
                                     <div className='input-box'>
                                         <input
                                             type={values.showPassword ? "text" : "password"}
@@ -70,12 +73,15 @@ export default function Login() {
                             <div style={{ textAlign: "center" }} >Don't have any account yet? <a onClick={() => {
                                 setSignUp(false);
                                 setValues({ password: "", showPassword: false })
-                            }}><strong>Sign Up</strong></a></div>
+                            }}><span style={{ textDecoration: "underline", fontWeight: "bold" }}>Sign Up</span></a></div>
                         </div> :
                         <div className='form-container'>
                             <div className='form-box'>
                                 <form action="">
-                                    <input type="text" placeholder='Username' />
+                                    <div className='input-box'>
+                                        <input type="text" placeholder='Username' />
+                                        <FontAwesomeIcon icon={faAt} className='uname' />
+                                    </div>
                                     <div className='input-box'>
                                         <input
                                             type={values.showPassword ? "text" : "password"}
@@ -102,7 +108,7 @@ export default function Login() {
                                 setSignUp(true);
                                 setValues({ password: "", showPassword: false });
                                 setConfirmValues({ password: "", showPassword: false })
-                            }}><strong>Login</strong></a></div>
+                            }}><span style={{ textDecoration: "underline", fontWeight: "bold" }}>Login</span></a></div>
                         </div>
                     }
                     {/* <div className='form-container'>
