@@ -24,7 +24,8 @@
 }
 
 .form-container {
-    padding: 86px;
+    padding: 41px;
+    width: 410px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,4 +47,16 @@
     background-color: #EFF1F8;
     margin: 5px 0;
     outline: none;
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.show-hide {
+    position: absolute;
+    top: 37%;
+    right: 4%;
+    cursor: pointer;
 }
