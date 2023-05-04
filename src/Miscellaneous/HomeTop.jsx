@@ -1,14 +1,14 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import NewUser from './NewUser';
+import NewRoom from './NewRoom'
+import { Link, useNavigate } from 'react-router-dom'
 import img1 from '../assets/8262271.jpg'
 
 
 export default function HomeTop() {
-
-
+    // const [user, setUser] = useState(false)
+    // const [room, setRoom] = useState(false)
     const navigate = useNavigate()
-
     return (
         <div>
             <header>
@@ -39,10 +39,11 @@ export default function HomeTop() {
                 </div>
             </header>
             <section className='hero-section'>
-
+                {/* {user && <NewUser user={user} setUser={setUser} />}
+                {room && <NewRoom room={room} setRoom={setRoom} />} */}
                 <div className='btn-grp'>
-                    <button className='btn'  onClick={()=>navigate('/register')}>Register</button>
-                    <button className='btn'  onClick={()=>navigate('/login')}>Login</button>
+                    <button className='btn' onClick={() => {navigate('/Login')}}>Sign Up</button>
+                    <button className='btn' onClick={() => {navigate('/Login')}}>Login</button>
                 </div>
 
                 <div className='hero-img'>
