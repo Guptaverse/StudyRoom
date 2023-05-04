@@ -14,7 +14,7 @@ img {
 }
 
 header {
-    height: 70px;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-between;

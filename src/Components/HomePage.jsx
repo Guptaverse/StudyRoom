@@ -22,6 +22,9 @@ export default function HomePage() {
                             <li>
                                 <Link to="/" className="active">Home</Link>
                             </li>
+                            <li>
+                                <Link to="/dashboard">Dashboard</Link>
+                            </li>
 
                             <li>
                                 <Link to="">About</Link>
