@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '../Components/HomePage'
-import Dashboard from '../Components/Dashboard'
+import Dashboard from './Dashboard'
 
 export default function Home() {
   return (
