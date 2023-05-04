@@ -42,8 +42,8 @@ export default function HomeTop() {
                 {/* {user && <NewUser user={user} setUser={setUser} />}
                 {room && <NewRoom room={room} setRoom={setRoom} />} */}
                 <div className='btn-grp'>
-                    <button className='btn' onClick={() => {navigate('/Login')}}>Sign Up</button>
-                    <button className='btn' onClick={() => {navigate('/Login')}}>Login</button>
+                    <button className='btn' onClick={() => {navigate('/register')}}>Register</button>
+                    <button className='btn' onClick={() => {navigate('/login')}}>Login</button>
                 </div>
 
                 <div className='hero-img'>
