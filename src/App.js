@@ -5,6 +5,7 @@ import Login from './Routes/Login';
 import Register from './Routes/Register';
 import LoginComp from './Components/LoginComp';
 import Dashboard from './Routes/Dashboard';
+import QuizPage from './Components/QuizPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/logincomp' element={<LoginComp />} />
+        <Route path='/quiz' element={<QuizPage />} />
       </Routes>
     </>
   );
