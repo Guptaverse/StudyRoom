@@ -4,6 +4,7 @@ import NewRoom from './NewRoom'
 import { Link, useNavigate } from 'react-router-dom'
 import img1 from '../assets/8262271.jpg'
 
+
 export default function HomeTop() {
     // const [user, setUser] = useState(false)
     // const [room, setRoom] = useState(false)
@@ -25,15 +26,11 @@ export default function HomeTop() {
                                 <Link to="">About</Link>
                             </li>
                         </ul>
-                        {/* <div className="login-signup">
-                            <a href="">Login</a> or <a href="">Signup</a>
-                        </div> */}
+
                     </nav>
                 </div>
                 <div className="header-right">
-                    {/* <div className="login-signup">
-                        <a href="">Login</a> or <a href="">Signup</a>
-                    </div> */}
+
                     <div className="hamburger">
                         <div></div>
                         <div></div>
@@ -48,6 +45,7 @@ export default function HomeTop() {
                     <button className='btn' onClick={() => {navigate('/Login')}}>Sign Up</button>
                     <button className='btn' onClick={() => {navigate('/Login')}}>Login</button>
                 </div>
+
                 <div className='hero-img'>
                     <img src={img1} alt="" />
                 </div>
