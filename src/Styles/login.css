@@ -31,6 +31,10 @@
     justify-content: space-between;
 }
 
+.form-container a {
+    cursor: pointer;
+}
+
 .form-box form{
     display: flex;
     flex-direction: column;

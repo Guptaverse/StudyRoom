@@ -61,12 +61,12 @@ export default function Login() {
                                         <input
                                             type={values.showPassword ? "text" : "password"}
                                             onChange={handlePasswordChange("password")}
-                                            placeholder='Password'
+                                            placeholder='Confirm Password'
                                             value={values.password}
                                         />
                                         <FontAwesomeIcon icon={faEye} onClick={handleClickShowPassword} className='show-hide' />
                                     </div>
-                                    <button className='btn'>Login</button>
+                                    <button className='btn'>Sign Up</button>
                                 </form>
                             </div>
                             <div style={{ textAlign: "center" }} >Already have an account? <a onClick={() => setSignUp(true)}><strong>Login</strong></a></div>
