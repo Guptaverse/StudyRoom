@@ -12,7 +12,8 @@
 .quiz-container{
     /* border: 3px solid blue; */
     /* padding: 10px; */
-    height: 500px;
+    /* height: 500px; */
+    width: 553px;
 }
 
 .quiz-btns {
@@ -33,25 +34,28 @@
 .q-mark {
     position: absolute;
     left: 46.5%;
-    top: 9%;
+    top: 15%;
     font-size: 4em;
-    background-color: black;
+    background-color: #0B2239;
     padding: 20px 32px;
     border-radius: 50%;
-    color: wheat;
+    color: white;
 }
 
 .question{
     /* border: 3px solid red; */
-    /* padding: 10px; */
+    padding: 28px;
     height: 263px;
-    background-color: white;
+    background-color: #0b1d6c;
     border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.79em;
+    text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-
-
 
 .options {
     /* border: 3px solid black; */
@@ -67,20 +71,23 @@
 
 .option-box {
     /* border: 3px solid green; */
-    /* padding: 20px; */
-    background-color: white;
+    padding: 5px;
+    background-color: #274FC7;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 27px;
+    color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .op-no {
     padding: 9px 12px;
     display: flex;
     align-items: center;
-    background-color: yellow;
+    background-color: #0b1d6c;
     border-radius: 50%;
     font-weight: bold;
 }

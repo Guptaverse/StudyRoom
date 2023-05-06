@@ -6,29 +6,30 @@ import { faQuestion } from '@fortawesome/free-solid-svg-icons';
 const quizarr = [
 
     {
-        ques: "ques1",
-        options: ["optionques1", "optionques1", "optionques1", "optionques1"]
+        ques: "Which of the following is the correct name of React.js?",
+        options: ["React", "React.js", "ReactJS", "All of the above"]
     },
     {
-        ques: "ques2",
+        ques: "Which of the following are the advantages of React.js?",
         options: ["optionques2", "optionques2", "optionques2", "optionques2"]
     },
     {
-        ques: "ques3",
+        ques: "Which of the following is not a disadvantage of React.js?",
         options: ["optionques3", "optionques3", "optionques3", "optionques3"]
     },
     {
-        ques: "ques4",
+        ques: "Which of the following command is used to install create-react-app?",
         options: ["optionques4", "optionques4", "optionques4", "optionques4"]
     },
     {
-        ques: "ques5",
+        ques: " What of the following is used in React.js to increase performance?",
         options: ["optionques5", "optionques5", "optionques5", "optionques5"]
     }
 ];
 
 export default function QuizPage() {
     const [page, setPage] = useState(0)
+
     return (
         <>
             <div className='quiz-section'>
