@@ -34,7 +34,7 @@
 .q-mark {
     position: absolute;
     left: 46.5%;
-    top: 15%;
+    top: 9%;
     font-size: 4em;
     background-color: #0B2239;
     padding: 20px 32px;
@@ -59,21 +59,18 @@
 
 .options {
     /* border: 3px solid black; */
-    /* padding: 10px; */
-}
-
-.option-container{
+    padding: 10px;
     display: flex;
-    /* justify-content: center; */
-    /* border: 3px solid blue; */
-    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    
 }
 
 .option-box {
     /* border: 3px solid green; */
     padding: 5px;
     background-color: #274FC7;
-    width: 100%;
+    width: 49%;
     border-radius: 27px;
     color: white;
     display: flex;
@@ -91,3 +88,19 @@
     border-radius: 50%;
     font-weight: bold;
 }
+
+.next-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.next-btn .btn {
+    background-color: #0b1d6c;
+    width: 20%;
+}
+
+.selected {
+    background-color: #0b1d6c;
+}
+
