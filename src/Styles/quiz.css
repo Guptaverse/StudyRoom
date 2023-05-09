@@ -89,13 +89,19 @@
     font-weight: bold;
 }
 
-.next-btn{
+.nav-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.next-btn {
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
 
-.next-btn .btn {
+.nav-btn .btn, .next-btn .btn {
     background-color: #0b1d6c;
     width: 20%;
 }
